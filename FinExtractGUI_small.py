@@ -55,8 +55,12 @@ class Ui_widget(object):
                                         "font: 10pt \"Adobe Devanagari\";")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.clearText)
+        font = QtGui.QFont()
+        font.setFamily("Arial")  # 括号里可以设置成自己想要的其它字体
+        font.setPointSize(8)
         self.label_5 = QtWidgets.QLabel(widget)
-        self.label_5.setGeometry(QtCore.QRect(250, 550, 381, 31))
+        self.label_5.setGeometry(QtCore.QRect(130, 565, 381, 31))
+        self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
 
         self.retranslateUi(widget)
@@ -64,7 +68,7 @@ class Ui_widget(object):
 
     def retranslateUi(self, widget):
         _translate = QtCore.QCoreApplication.translate
-        widget.setWindowTitle(_translate("widget", "金融文本摘要生成系统"))
+        widget.setWindowTitle(_translate("widget", "Gorilla 自动摘要"))
         self.label.setText(_translate("widget",
                                       "<html><head/><body><p><span style=\" font-size:20pt; font-weight:600;\">金融文本摘要生成系统</span></p></body></html>"))
         self.label_2.setText(_translate("widget",
@@ -75,7 +79,7 @@ class Ui_widget(object):
                                         "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">请输入您的偏好</span></p></body></html>"))
         self.pushButton.setText(_translate("widget", "提取摘要"))
         self.pushButton_2.setText(_translate("widget", "清空文本"))
-        self.label_5.setText(_translate("widget", "第十七届”挑战杯“参赛项目"))
+        self.label_5.setText(_translate("widget", "第六届“汇创青春”上海大学生文化创意作品展示活动参赛作品"))
 
     def inputTextWrite(self):
         text = self.plainTextEdit.toPlainText()

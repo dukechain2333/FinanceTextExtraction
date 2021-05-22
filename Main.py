@@ -87,6 +87,6 @@ if __name__ == '__main__':
     myDlg = QWidget()
     myUI = FinExtractGUI_small.Ui_widget()
     myUI.setupUi(myDlg)
-    myDlg.setWindowIcon(QIcon('logo.jpg'))
+    myDlg.setWindowIcon(QIcon('logo.png'))
     myDlg.show()
     sys.exit(myapp.exec_())
