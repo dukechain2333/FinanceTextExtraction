@@ -21,7 +21,7 @@ class Ui_widget(object):
         widget.setObjectName("widget")
         widget.resize(429, 589)
         self.label = QtWidgets.QLabel(widget)
-        self.label.setGeometry(QtCore.QRect(20, 20, 321, 41))
+        self.label.setGeometry(QtCore.QRect(20, 20, 381, 41))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(widget)
         self.label_2.setGeometry(QtCore.QRect(20, 71, 121, 20))
@@ -39,7 +39,7 @@ class Ui_widget(object):
         self.label_4.setGeometry(QtCore.QRect(20, 440, 151, 31))
         self.label_4.setObjectName("label_4")
         self.lineEdit = QtWidgets.QLineEdit(widget)
-        self.lineEdit.setGeometry(QtCore.QRect(170, 440, 211, 31))
+        self.lineEdit.setGeometry(QtCore.QRect(120, 440, 211, 31))
         self.lineEdit.setObjectName("lineEdit")
         self.pushButton = QtWidgets.QPushButton(widget)
         self.pushButton.setGeometry(QtCore.QRect(20, 490, 101, 51))
@@ -55,12 +55,12 @@ class Ui_widget(object):
                                         "font: 10pt \"Adobe Devanagari\";")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.clearText)
-        font = QtGui.QFont()
-        font.setFamily("Arial")  # 括号里可以设置成自己想要的其它字体
-        font.setPointSize(8)
+        fontTag = QtGui.QFont()
+        fontTag.setFamily("Arial")  # 括号里可以设置成自己想要的其它字体
+        fontTag.setPointSize(8)
         self.label_5 = QtWidgets.QLabel(widget)
-        self.label_5.setGeometry(QtCore.QRect(130, 565, 381, 31))
-        self.label_5.setFont(font)
+        self.label_5.setGeometry(QtCore.QRect(200, 565, 381, 31))
+        self.label_5.setFont(fontTag)
         self.label_5.setObjectName("label_5")
 
         self.retranslateUi(widget)
@@ -68,18 +68,18 @@ class Ui_widget(object):
 
     def retranslateUi(self, widget):
         _translate = QtCore.QCoreApplication.translate
-        widget.setWindowTitle(_translate("widget", "Gorilla 自动摘要"))
+        widget.setWindowTitle(_translate("widget", "文锦科技"))
         self.label.setText(_translate("widget",
-                                      "<html><head/><body><p><span style=\" font-size:20pt; font-weight:600;\">金融文本摘要生成系统</span></p></body></html>"))
+                                      "<html><head/><body><p><span style=\" font-size:15pt; font-weight:600;\">金融文本摘要生成系统</span></p></body></html>"))
         self.label_2.setText(_translate("widget",
-                                        "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">原文本输入框</span></p></body></html>"))
+                                        "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">原文本输入框</span></p></body></html>"))
         self.label_3.setText(_translate("widget",
-                                        "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">自动摘要结果</span></p></body></html>"))
+                                        "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">自动摘要结果</span></p></body></html>"))
         self.label_4.setText(_translate("widget",
-                                        "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">请输入您的偏好</span></p></body></html>"))
+                                        "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">请输入您的偏好</span></p></body></html>"))
         self.pushButton.setText(_translate("widget", "提取摘要"))
         self.pushButton_2.setText(_translate("widget", "清空文本"))
-        self.label_5.setText(_translate("widget", "第六届“汇创青春”上海大学生文化创意作品展示活动参赛作品"))
+        self.label_5.setText(_translate("widget", "第七届中国国际“互联网+”大学生创新创业大赛"))
 
     def inputTextWrite(self):
         text = self.plainTextEdit.toPlainText()
